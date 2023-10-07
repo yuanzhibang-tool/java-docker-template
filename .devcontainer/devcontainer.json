@@ -17,7 +17,11 @@
                 "vscjava.vscode-java-debug",
                 "vscjava.vscode-java-test",
                 "vscjava.vscode-java-dependency",
-                "vscjava.vscode-maven"
+                "vscjava.vscode-maven",
+                "ms-azuretools.vscode-docker",
+                "gruntfuggly.todo-tree",
+                "formulahendry.code-runner",
+                "aaron-bond.better-comments"
             ]
         }
     }
