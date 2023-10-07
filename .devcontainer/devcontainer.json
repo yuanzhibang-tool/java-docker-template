@@ -1,0 +1,24 @@
+{
+    "name": "java-dev",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "java-dev",
+    "runServices": [
+        "java-dev"
+    ],
+    "workspaceFolder": "/home/developer/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "github.copilot",
+                "github.copilot-labs",
+                "github.copilot-chat",
+                "ms-azuretools.vscode-docker",
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-java-debug",
+                "vscjava.vscode-java-test",
+                "vscjava.vscode-java-dependency",
+                "vscjava.vscode-maven"
+            ]
+        }
+    }
+}
