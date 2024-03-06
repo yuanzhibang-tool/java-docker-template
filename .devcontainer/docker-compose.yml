@@ -4,15 +4,18 @@ services:
     build:
       context: ..
       dockerfile: .devcontainer/Dockerfile
-    # ports:
-    #   - 8888:8888
+    ports:
+      - 8080:8080
     volumes:
       - ..:/home/developer/workspace
-    deploy:
-      resources:
-        # reservations:
-        #   devices:
-        #     - capabilities: [gpu]
-        limits:
-          # limit cpu usage to prevent system hangs
-          cpus: '0.70'
+      - ./settings.xml:/root/.m2/settings.xml
+      # 需要在镜像中使用docker命令时，需要挂载docker.sock,下发仅支持linux
+      # - /var/run/docker.sock:/var/run/docker.sock
+      # deploy:
+      #   resources:
+      #     # reservations:
+      #     #   devices:
+      #     #     - capabilities: [gpu]
+      #     limits:
+      #       # limit cpu usage to prevent system hangs
+      #       cpus: '0.70'
